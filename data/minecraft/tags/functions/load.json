@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "guncraft:system/load",
+        "score_to_health:load",
+        "forward_spreader:core/load",
+        "score_damage:core/init"
+    ]
+}

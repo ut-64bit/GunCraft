@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "guncraft:fire_gun"
+        }
+      }
+    },
+    "rewards": {
+      "function": "guncraft:craft/fire_gun",
+      "loot": [
+        "guncraft:fire_gun"
+      ]
+    }
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "asset:guncraft/quick_shot"
+        }
+      }
+    },
+    "rewards": {
+      "function": "asset:guncraft/quick_shot/craft",
+      "loot": [
+        "asset:guncraft/quick_shot"
+      ]
+    }
+  }

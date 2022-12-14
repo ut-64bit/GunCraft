@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "guncraft:explosion_ammo"
+            }
+        }
+    },
+    "rewards": {
+        "function": "guncraft:craft/explosion_ammo"
+    }
+}

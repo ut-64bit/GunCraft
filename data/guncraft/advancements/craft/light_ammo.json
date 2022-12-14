@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "guncraft:light_ammo"
+            }
+        }
+    },
+    "rewards": {
+        "function": "guncraft:craft/light_ammo"
+    }
+}

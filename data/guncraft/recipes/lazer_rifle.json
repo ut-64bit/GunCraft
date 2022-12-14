@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iig",
+        "slw"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "l": {
+            "item": "minecraft:lever"
+        },
+        "w":{
+            "tag": "minecraft:planks"
+        },
+        "s":{
+            "item": "minecraft:glowstone"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

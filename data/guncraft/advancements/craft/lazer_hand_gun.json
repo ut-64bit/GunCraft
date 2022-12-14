@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "guncraft:lazer_hand_gun"
+        }
+      }
+    },
+    "rewards": {
+      "function": "guncraft:craft/lazer_hand_gun",
+      "loot": [
+        "guncraft:lazer_hand_gun"
+      ]
+    }
+  }
+  

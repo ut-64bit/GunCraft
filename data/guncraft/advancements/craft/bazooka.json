@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "guncraft:bazooka"
+        }
+      }
+    },
+    "rewards": {
+      "function": "guncraft:craft/bazooka",
+      "loot": [
+        "guncraft:bazooka"
+      ]
+    }
+  }
+  

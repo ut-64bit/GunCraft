@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "nni",
+        "tli"
+    ],
+    "key": {
+        "t": {
+            "item": "minecraft:iron_trapdoor"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "l": {
+            "item": "minecraft:lever"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

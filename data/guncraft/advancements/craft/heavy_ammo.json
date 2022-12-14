@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "guncraft:heavy_ammo"
+            }
+        }
+    },
+    "rewards": {
+        "function": "guncraft:craft/heavy_ammo"
+    }
+}

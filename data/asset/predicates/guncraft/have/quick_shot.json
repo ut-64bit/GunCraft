@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "asset:guncraft/have/off/quick_shot"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "asset:guncraft/have/main/quick_shot"
+        }
+    ]
+}

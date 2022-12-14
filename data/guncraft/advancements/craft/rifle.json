@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "guncraft:rifle"
+        }
+      }
+    },
+    "rewards": {
+      "function": "guncraft:craft/rifle",
+      "loot": [
+        "guncraft:rifle"
+      ]
+    }
+  }
+  

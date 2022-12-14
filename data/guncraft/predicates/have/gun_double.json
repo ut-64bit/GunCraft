@@ -1,0 +1,10 @@
+[
+    {
+        "condition": "minecraft:reference",
+        "name": "guncraft:have/off/gun"
+    },
+    {
+        "condition": "minecraft:reference",
+        "name": "guncraft:have/main/double"
+    }
+]

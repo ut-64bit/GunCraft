@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "guncraft:hand_gun"
+      }
+    }
+  },
+  "rewards": {
+    "function": "guncraft:craft/hand_gun",
+    "loot": [
+      "guncraft:hand_gun"
+    ]
+  }
+}

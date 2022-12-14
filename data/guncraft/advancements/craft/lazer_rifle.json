@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "guncraft:lazer_rifle"
+        }
+      }
+    },
+    "rewards": {
+      "function": "guncraft:craft/lazer_rifle",
+      "loot": [
+        "guncraft:lazer_rifle"
+      ]
+    }
+  }
+  

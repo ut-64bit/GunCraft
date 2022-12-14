@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "guncraft:system/tick",
+        "guncraft:system/user/main"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#n/",
+        "nBH",
+        "/PR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dispenser"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+        },
+        "B": {
+            "item": "minecraft:bow"
+        },
+        "H": {
+            "item": "minecraft:hopper"
+        },
+        "P": {
+            "item": "minecraft:piston"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

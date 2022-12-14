@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "asset:guncraft/have/off/quick_shot"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "guncraft:have/off/fire_gun"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "guncraft:have/off/hand_gun"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "guncraft:have/off/lazer_hand_gun"
+        }
+    ]
+}
