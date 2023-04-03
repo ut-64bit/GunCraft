@@ -10,6 +10,8 @@
     #declare score_holder $have_ammo
     #declare score_holder $max_ammo
 
+tag @s add This
+
 # スコアとnbt取得
     function guncraft:core/score_get
 
@@ -47,31 +49,31 @@
 
 # 減速
     ## hand_gun
-        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/hand_gun at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/hand_gun at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
 
     ## rifle
-        execute if predicate guncraft:have/rifle at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
-        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/rifle at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/rifle at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/rifle at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:4b,Duration:5,ShowParticles:0b}]}
 
     ## bazooka
-        execute if predicate guncraft:have/bazooka at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:2b,Duration:2,ShowParticles:0b}]}
-        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/bazooka at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/bazooka at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:2b,Duration:5,ShowParticles:0b}]}
+        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/bazooka at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:4b,Duration:5,ShowParticles:0b}]}
 
     ## 3burst
-        execute if predicate guncraft:have/3burst at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/shotgun at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
     
     ## lazer_rifle
-        execute if predicate guncraft:have/lazer_rifle at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
-        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/lazer_rifle at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/lazer_rifle at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/lazer_rifle at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:4b,Duration:5,ShowParticles:0b}]}
 
     ## lazer_hand_gun
-        execute if predicate guncraft:have/lazer_hand_gun at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/lazer_hand_gun at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
 
     ## fire_gun
-        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/fire_gun at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:1b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:flag/sneaking if predicate guncraft:have/fire_gun at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:1b,Duration:5,ShowParticles:0b}]}
 
     ## scope_rifle
-        execute if predicate guncraft:have/scope_rifle at @s anchored eyes positioned ^ ^ ^0.2 run summon area_effect_cloud ~ ~-1 ~ {Particle:"minecraft:block air",Radius:0.4f,Duration:6,DurationOnUse:0,Age:4,WaitTime:0,Effects:[{Id:2b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+        execute if predicate guncraft:have/scope_rifle at @s run summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:block air",Radius:0.2f,Duration:6,Age:4,Effects:[{Id:2,Amplifier:0b,Duration:2,ShowParticles:0b}]}
 
 # スコア設定
     ## GunCraft.Rclick をリセット
@@ -92,6 +94,8 @@
     execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 run scoreboard players operation @s GunCraft.LAmmo = $ammo GunCraft.Temp
     execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 run title @s actionbar [{"text": "| ","color": "green"},{"score":{"objective":"GunCraft.LAmmo","name":"@s"},"color": "green"},{"text": " "},{"score":{"objective":"GunCraft.Temp","name":"$ammo"},"color": "green"},{"text": " |"}]
     execute if predicate guncraft:have/gun unless predicate guncraft:have/gun_double run title @s actionbar [{"text": "| ","color": "green"},{"score":{"objective":"GunCraft.Temp","name":"$ammo"},"color": "green"},{"text": " |"}]
+
+tag @s remove This
 
 # 進捗剥奪
     execute if entity @s[advancements={guncraft:using/scope_rifle=true}] run advancement revoke @s only guncraft:using/scope_rifle

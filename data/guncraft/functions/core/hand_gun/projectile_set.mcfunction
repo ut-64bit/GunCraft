@@ -5,11 +5,8 @@
 # @within function guncraft:core/hand_gun/shot
 
 # 性能
-    scoreboard players set @s GunCraft.Damage 500
-    scoreboard players set @s GunCraft.HeadDamage 550
-    scoreboard players operation @s GunCraft.Damage *= $Damage GunCraft.Temp
-    scoreboard players operation @s GunCraft.HeadDamage *= $Damage GunCraft.Temp
-    scoreboard players set @s GunCraft.Speed 40
+    data modify entity @s data set value {Damage:5.0d,HeadDamage:5.5d}
+    scoreboard players set @s GunCraft.Speed 30
     scoreboard players set @s GunCraft.Reach 120
 
 # 再帰カウント

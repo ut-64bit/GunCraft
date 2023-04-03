@@ -16,7 +16,7 @@
     execute if predicate guncraft:have/main/lazer_hand_gun run scoreboard players set @s GunCraft.CoolTime 5
 
 # 3burst
-    execute if predicate guncraft:have/3burst run scoreboard players set @s GunCraft.CoolTime 6
+    execute if predicate guncraft:have/shotgun run scoreboard players set @s GunCraft.CoolTime 6
 
 # rifle
     execute if predicate guncraft:have/rifle run scoreboard players set @s GunCraft.CoolTime 20

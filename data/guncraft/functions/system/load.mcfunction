@@ -2,7 +2,7 @@
 #
 # load処理
 #
-# @private
+# @handles advancement minecraft:load
 
 
 #> performance
@@ -177,3 +177,5 @@ scoreboard objectives add GunCraft.LAmmo dummy
     execute unless score $Damage GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $Damage GunCraft.Temp 1
     execute unless score $2 GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $2 GunCraft.Temp 2
     execute unless score $3 GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $3 GunCraft.Temp 3
+    execute unless score $7 GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $3 GunCraft.Temp 7
+    execute unless score $10 GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $3 GunCraft.Temp 10

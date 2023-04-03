@@ -5,18 +5,18 @@
 # @within function guncraft:core/projectile/trigger
 
 # 弾丸召喚
-    summon marker ^ ^ ^ {Tags: ["GunCraft.Projectile", "GunCraft.Preparation","GunCraft.Bom"]}
+    summon marker ^ ^ ^ {Tags:["GunCraft.Projectile","GunCraft.Preparation","GunCraft.Bom"]}
     scoreboard players operation @e[tag=GunCraft.Preparation,distance=..0.01,limit=1] GunCraft.PlayerID = @s GunCraft.PlayerID
 
     ## 弾丸の性能設定
         execute as @e[tag=GunCraft.Preparation,distance=..0.01] run function guncraft:core/bazooka/projectile_set
 
 # 発射音
-    execute at @s run function guncraft:core/sounds/heavy_shot
+    execute at @s run function guncraft:core/sounds/bazzoka
 
 # プレイヤーのスコア設定
     ## リコイル
-        scoreboard players set @s GunCraft.Recoil 6
+        scoreboard players set @s GunCraft.Recoil 100
 
     ## クールタイム
         scoreboard players set @s GunCraft.CoolTime 40

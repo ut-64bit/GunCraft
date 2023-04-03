@@ -5,10 +5,7 @@
 # @within function guncraft:core/scope_rifle/shot
 
 # 性能
-    scoreboard players set @s GunCraft.Damage 1000
-    scoreboard players set @s GunCraft.HeadDamage 2500
-    scoreboard players operation @s GunCraft.Damage *= $Damage GunCraft.Temp
-    scoreboard players operation @s GunCraft.HeadDamage *= $Damage GunCraft.Temp
+    data modify entity @s data set value {Damage:10.0d,HeadDamage:15.0d}
     scoreboard players set @s GunCraft.Speed 100
     scoreboard players set @s GunCraft.Reach 800
 

@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "function": "gc_score_to_health:load"
+  }
+}

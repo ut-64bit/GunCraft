@@ -9,7 +9,7 @@
     scoreboard players set @s GunCraft.HeadDamage 600
     scoreboard players operation @s GunCraft.Damage *= $Damage GunCraft.Temp
     scoreboard players operation @s GunCraft.HeadDamage *= $Damage GunCraft.Temp
-    scoreboard players set @s GunCraft.Speed 10
+    scoreboard players set @s GunCraft.Speed 5
     scoreboard players set @s GunCraft.Reach 150
 
     # 再帰カウント

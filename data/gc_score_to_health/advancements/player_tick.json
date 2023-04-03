@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "gc_score_to_health:player_tick"
+    }
+}

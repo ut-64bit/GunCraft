@@ -2,8 +2,8 @@
     "replace": false,
     "values": [
         "guncraft:system/load",
-        "score_to_health:load",
+        "gc_score_to_health:load",
         "forward_spreader:core/load",
-        "score_damage:core/init"
+        "gc_score_damage:core/init"
     ]
 }

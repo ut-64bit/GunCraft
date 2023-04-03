@@ -13,19 +13,11 @@
 
 # ダメージ設定
     data modify storage score_damage: Argument set value {Damage:1,DamageType:"Projectile"}
-    execute store result storage score_damage: Argument.Damage float 0.01 run scoreboard players get @s GunCraft.Damage
-
-    ## fire
-        execute if entity @s[tag=GunCraft.Fire] run data modify storage score_damage: Argument.DamageType set value "Fire"
-
-    ## bom
-        execute if entity @s[tag=GunCraft.Bom] run data modify storage score_damage: Argument.DamageType set value "Blast"
-
-    ## light
-        execute if entity @s[tag=GunCraft.Light] run data modify storage score_damage: Argument.DamageType set value "None"
+    data modify storage score_damage: Argument.Damage set from entity @s data.Damage
+    execute if data entity @s data.DamageType run data modify storage score_damage: Argument.DamageType set from entity @s data.DamageType
 
     ## 環境補正
-        execute if entity @s[tag=GunCraft.Fire] as @e[tag=Damage] unless predicate guncraft:effect/fire_resistance run function guncraft:core/projectile/hit/fire_hit
+        execute if data entity @s {data:{DamageType:Fire}} as @e[tag=Damage] unless predicate guncraft:effect/fire_resistance run function guncraft:core/projectile/hit/fire_hit
 
 # ヘッドショット判定
     execute as @e[tag=Damage] at @s anchored eyes positioned ^ ^ ^ positioned ~-0.3 ~-0.5 ~-0.5 if entity @e[tag=projectile_this,dx=0] run function guncraft:core/projectile/hit/head_shot

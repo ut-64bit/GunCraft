@@ -13,6 +13,8 @@
     ## 火
         execute if entity @s[tag=GunCraft.Fire] run particle flame ~ ~ ~ 0 0 0 0 1 force @a[tag=ShowParticle]
     ## 普通
+        execute at @s unless entity @s[tag=GunCraft.Bom] unless entity @s[tag=GunCraft.Light] unless entity @s[tag=GunCraft.Fire] unless block ~ ~ ~ #guncraft:in_water run particle minecraft:electric_spark ^ ^ ^ 0 0 0 0 1 force @a[tag=ShowParticle]
         execute at @s unless entity @s[tag=GunCraft.Bom] unless entity @s[tag=GunCraft.Light] unless entity @s[tag=GunCraft.Fire] unless block ~ ~ ~ #guncraft:in_water run particle minecraft:crit ^ ^ ^ 0 0 0 0 1 force @a[tag=ShowParticle]
     ## 水中
+        execute at @s unless entity @s[tag=GunCraft.Bom] unless entity @s[tag=GunCraft.Light] unless entity @s[tag=GunCraft.Fire] if block ~ ~ ~ #guncraft:in_water run particle minecraft:electric_spark ^ ^ ^ 0 0 0 0 1 force @a[tag=ShowParticle]
         execute at @s unless entity @s[tag=GunCraft.Bom] unless entity @s[tag=GunCraft.Light] unless entity @s[tag=GunCraft.Fire] if block ~ ~ ~ #guncraft:in_water run particle minecraft:bubble ^ ^ ^ 0 0 0 0 1 force @a[tag=ShowParticle]

@@ -8,8 +8,8 @@
 # @private
     #declare tag HeadShot
 
-# ヘッドショット用スコア代入
-    execute store result storage score_damage: Argument.Damage float 0.01 run scoreboard players get @e[tag=projectile_this,limit=1] GunCraft.HeadDamage
+# ヘッドショット用data代入
+    data modify storage score_damage: Argument.Damage set from entity @e[tag=projectile_this,limit=1] data.Damage
 
 # bomだったら爆発
     execute if entity @e[tag=projectile_this,tag=GunCraft.Bom] run function guncraft:core/projectile/hit/explosion

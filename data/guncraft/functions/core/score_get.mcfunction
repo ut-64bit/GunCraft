@@ -39,61 +39,63 @@
 
 
 # 弾丸の所持数を取得
+    execute if entity @s[gamemode=creative] run scoreboard players set $have_ammo GunCraft.Temp 999
+
     ## メインハンド
         ### hand_gun
-            execute if predicate guncraft:have/main/hand_gun unless predicate guncraft:have/off/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/main/hand_gun unless predicate guncraft:have/off/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### lazer_hand_gun
-            execute if predicate guncraft:have/main/lazer_hand_gun unless predicate guncraft:have/off/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/main/lazer_hand_gun unless predicate guncraft:have/off/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### fire_gun
-            execute if predicate guncraft:have/main/fire_gun unless predicate guncraft:have/off/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/main/fire_gun unless predicate guncraft:have/off/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### bazooka
-            execute if predicate guncraft:have/bazooka store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:explosion_ammo}}} 0
+            execute if predicate guncraft:have/bazooka unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:explosion_ammo}}} 0
 
         ### lazer_rifle
-            execute if predicate guncraft:have/lazer_rifle store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
+            execute if predicate guncraft:have/lazer_rifle unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
 
         ### rifle
-            execute if predicate guncraft:have/rifle store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
+            execute if predicate guncraft:have/rifle unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
 
         ### scope_rifle
-            execute if predicate guncraft:have/scope_rifle store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
+            execute if predicate guncraft:have/scope_rifle unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
 
         ### 3burst
-            execute if predicate guncraft:have/3burst store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
+            execute if predicate guncraft:have/shotgun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:heavy_ammo}}} 0
 
     ## オフハンド
         ### hand_gun
-            execute if predicate guncraft:have/off/hand_gun unless predicate guncraft:have/main/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/off/hand_gun unless predicate guncraft:have/main/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### lazer_hand_gun
-            execute if predicate guncraft:have/off/lazer_hand_gun unless predicate guncraft:have/main/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/off/lazer_hand_gun unless predicate guncraft:have/main/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### fire_gun
-            execute if predicate guncraft:have/off/fire_gun unless predicate guncraft:have/main/gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+            execute if predicate guncraft:have/off/fire_gun unless predicate guncraft:have/main/gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
     ## 両手持ち
         ### 右手
             #### hand_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/hand_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/hand_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
             #### lazer_hand_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/lazer_hand_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/lazer_hand_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
             #### fire_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/fire_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches 1 if predicate guncraft:have/main/fire_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
         ### 左手
             #### hand_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/hand_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/hand_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
             #### lazer_hand_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/lazer_hand_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/lazer_hand_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
             #### fire_gun
-                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/fire_gun store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
+                execute if predicate guncraft:have/gun_double if score @s GunCraft.OffSet matches -1 if predicate guncraft:have/off/fire_gun unless entity @s[gamemode=creative] store result score $have_ammo GunCraft.Temp run clear @s command_block{KaguNBT:{Item:{Type:light_ammo}}} 0
 
 # 最大装填数を取得
     ## メインハンド
@@ -119,7 +121,7 @@
             execute if predicate guncraft:have/scope_rifle run scoreboard players set $max_ammo GunCraft.Temp 1
 
         ### 3burst
-            execute if predicate guncraft:have/3burst run scoreboard players set $max_ammo GunCraft.Temp 5
+            execute if predicate guncraft:have/shotgun run scoreboard players set $max_ammo GunCraft.Temp 5
 
     ## オフハンド
         ### hand_gun

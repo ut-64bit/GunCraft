@@ -15,7 +15,7 @@
         },
         {
             "condition": "minecraft:reference",
-            "name": "guncraft:have/3burst"
+            "name": "guncraft:have/shotgun"
         },
         {
             "condition": "minecraft:reference",
